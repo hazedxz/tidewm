@@ -79,7 +79,7 @@ overshoot. The animation thread targets high frame rates using
 frame are moved atomically using `DeferWindowPos` / `EndDeferWindowPos`
 to avoid visual tearing between tiles.
 
-We did try spring physics at some point. It looked terrible. lmfao.
+At one point, I tried using spring physics. It looked terrible lmfao.
 
 ---
 
