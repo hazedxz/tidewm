@@ -1,0 +1,22 @@
+# tidewm configuration
+# Location: %APPDATA%\tidewm\config.toml
+# Edit and save — changes apply on next tidewm start.
+
+# Gap in pixels between tiles (0 = flush, no space between windows)
+gap = 0
+
+# Animation duration in milliseconds (0 = instant, no animation)
+animation_ms = 160
+
+# Layout algorithm
+# "tall"    — main pane on the left, rest stacked on the right
+# "wide"    — main pane on top, rest stacked horizontally below
+# "bsp"     — binary space partition, alternates horizontal/vertical splits
+# "monocle" — one window at a time, full work area
+layout = "tall"
+
+# Main pane size ratio for tall and wide layouts (0.0 to 1.0)
+main_ratio = 0.55
+
+# Hotkey modifier key: "alt" | "win" | "ctrl"
+modifier = "alt"

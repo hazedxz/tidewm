@@ -1,0 +1,24 @@
+[package]
+name = "tidewm"
+version = "0.1.0"
+edition = "2021"
+description = "A minimal tiling window manager for Windows"
+
+[dependencies]
+windows = { version = "0.58", features = [
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_Graphics_Gdi",
+] }
+toml = "0.8"
+serde = { version = "1", features = ["derive"] }
+
+[build-dependencies]
+winres = "0.1"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
